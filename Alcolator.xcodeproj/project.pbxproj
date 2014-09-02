@@ -7,13 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		265DEFBA19B3DA8800FDAB82 /* BLCWhiskeyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 265DEFB919B3DA8800FDAB82 /* BLCWhiskeyViewController.m */; };
 		267E6CB719AD2EFD0098FD3D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 267E6CB619AD2EFD0098FD3D /* Foundation.framework */; };
 		267E6CB919AD2EFD0098FD3D /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 267E6CB819AD2EFD0098FD3D /* CoreGraphics.framework */; };
 		267E6CBB19AD2EFD0098FD3D /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 267E6CBA19AD2EFD0098FD3D /* UIKit.framework */; };
 		267E6CC119AD2EFD0098FD3D /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 267E6CBF19AD2EFD0098FD3D /* InfoPlist.strings */; };
 		267E6CC319AD2EFD0098FD3D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 267E6CC219AD2EFD0098FD3D /* main.m */; };
 		267E6CC719AD2EFD0098FD3D /* BLCAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 267E6CC619AD2EFD0098FD3D /* BLCAppDelegate.m */; };
-		267E6CCA19AD2EFD0098FD3D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 267E6CC819AD2EFD0098FD3D /* Main.storyboard */; };
 		267E6CCD19AD2EFD0098FD3D /* BLCViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 267E6CCC19AD2EFD0098FD3D /* BLCViewController.m */; };
 		267E6CCF19AD2EFD0098FD3D /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 267E6CCE19AD2EFD0098FD3D /* Images.xcassets */; };
 		267E6CD619AD2EFD0098FD3D /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 267E6CD519AD2EFD0098FD3D /* XCTest.framework */; };
@@ -34,6 +34,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		265DEFB819B3DA8800FDAB82 /* BLCWhiskeyViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BLCWhiskeyViewController.h; sourceTree = "<group>"; };
+		265DEFB919B3DA8800FDAB82 /* BLCWhiskeyViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BLCWhiskeyViewController.m; sourceTree = "<group>"; };
+		267008E019B5399E0030275C /* Constants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Constants.h; sourceTree = "<group>"; };
 		267E6CB319AD2EFD0098FD3D /* Alcolator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Alcolator.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		267E6CB619AD2EFD0098FD3D /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		267E6CB819AD2EFD0098FD3D /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -44,7 +47,6 @@
 		267E6CC419AD2EFD0098FD3D /* Alcolator-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Alcolator-Prefix.pch"; sourceTree = "<group>"; };
 		267E6CC519AD2EFD0098FD3D /* BLCAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BLCAppDelegate.h; sourceTree = "<group>"; };
 		267E6CC619AD2EFD0098FD3D /* BLCAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BLCAppDelegate.m; sourceTree = "<group>"; };
-		267E6CC919AD2EFD0098FD3D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		267E6CCB19AD2EFD0098FD3D /* BLCViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BLCViewController.h; sourceTree = "<group>"; };
 		267E6CCC19AD2EFD0098FD3D /* BLCViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BLCViewController.m; sourceTree = "<group>"; };
 		267E6CCE19AD2EFD0098FD3D /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
@@ -112,13 +114,15 @@
 		267E6CBC19AD2EFD0098FD3D /* Alcolator */ = {
 			isa = PBXGroup;
 			children = (
+				265DEFB819B3DA8800FDAB82 /* BLCWhiskeyViewController.h */,
+				265DEFB919B3DA8800FDAB82 /* BLCWhiskeyViewController.m */,
 				267E6CC519AD2EFD0098FD3D /* BLCAppDelegate.h */,
 				267E6CC619AD2EFD0098FD3D /* BLCAppDelegate.m */,
-				267E6CC819AD2EFD0098FD3D /* Main.storyboard */,
 				267E6CCB19AD2EFD0098FD3D /* BLCViewController.h */,
 				267E6CCC19AD2EFD0098FD3D /* BLCViewController.m */,
 				267E6CCE19AD2EFD0098FD3D /* Images.xcassets */,
 				267E6CBD19AD2EFD0098FD3D /* Supporting Files */,
+				267008E019B5399E0030275C /* Constants.h */,
 			);
 			path = Alcolator;
 			sourceTree = "<group>";
@@ -231,7 +235,6 @@
 			files = (
 				267E6CCF19AD2EFD0098FD3D /* Images.xcassets in Resources */,
 				267E6CC119AD2EFD0098FD3D /* InfoPlist.strings in Resources */,
-				267E6CCA19AD2EFD0098FD3D /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -251,6 +254,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				267E6CC719AD2EFD0098FD3D /* BLCAppDelegate.m in Sources */,
+				265DEFBA19B3DA8800FDAB82 /* BLCWhiskeyViewController.m in Sources */,
 				267E6CC319AD2EFD0098FD3D /* main.m in Sources */,
 				267E6CCD19AD2EFD0098FD3D /* BLCViewController.m in Sources */,
 			);
@@ -281,14 +285,6 @@
 				267E6CC019AD2EFD0098FD3D /* en */,
 			);
 			name = InfoPlist.strings;
-			sourceTree = "<group>";
-		};
-		267E6CC819AD2EFD0098FD3D /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				267E6CC919AD2EFD0098FD3D /* Base */,
-			);
-			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
 		267E6CDE19AD2EFD0098FD3D /* InfoPlist.strings */ = {
@@ -380,7 +376,9 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Alcolator/Alcolator-Prefix.pch";
 				INFOPLIST_FILE = "Alcolator/Alcolator-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -393,7 +391,9 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Alcolator/Alcolator-Prefix.pch";
 				INFOPLIST_FILE = "Alcolator/Alcolator-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
@@ -457,6 +457,7 @@
 				267E6CE719AD2EFD0098FD3D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		267E6CE819AD2EFD0098FD3D /* Build configuration list for PBXNativeTarget "AlcolatorTests" */ = {
 			isa = XCConfigurationList;
@@ -465,6 +466,7 @@
 				267E6CEA19AD2EFD0098FD3D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
