@@ -10,6 +10,7 @@
 #import "BLCViewController.h"
 #import "BLCViewController.h"
 #import "BLCWhiskeyViewController.h"
+#import "BLCMainMenuViewController.h"
 
 @implementation BLCAppDelegate
 
@@ -18,12 +19,15 @@
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]] ;
     // Override point for customization after application launch.
 
-    BLCViewController *wineVC = [[BLCViewController alloc] init];
-    BLCWhiskeyViewController *whiskeyVC = [[BLCWhiskeyViewController alloc] init];
-    UITabBarController *tabBarVC = [[UITabBarController alloc] init];
-    tabBarVC.viewControllers = @[wineVC, whiskeyVC];
+//    BLCViewController *wineVC = [[BLCViewController alloc] init];
+//    BLCWhiskeyViewController *whiskeyVC = [[BLCWhiskeyViewController alloc] init];
+//    UITabBarController *tabBarVC = [[UITabBarController alloc] init];
+//    tabBarVC.viewControllers = @[wineVC, whiskeyVC];
     
-    self.window.rootViewController = tabBarVC;
+    BLCMainMenuViewController *mainMenuViewController = [[BLCMainMenuViewController alloc] init];
+    UINavigationController *navigationController = [[UINavigationController alloc] initWithRootViewController:mainMenuViewController];
+    self.window.rootViewController = navigationController;
+    //self.window.rootViewController = [[BLCMainMenuViewController alloc] init];
     [self.window makeKeyAndVisible];
     return YES;
 }

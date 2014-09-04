@@ -31,12 +31,11 @@
 - (void) loadView {
     self.view = [[UIView alloc] init];
     
-    UIButton *button = [UIButton buttonWithType:UIButtonTypeSystem];
-    [self.view addSubview:button];
-    self.wineButton = button;
+    self.wineButton = [UIButton buttonWithType:UIButtonTypeSystem];
+    [self.view addSubview:_wineButton];
     
-    [self.view addSubview:button];
-    self.whiskeyButton = button;
+    self.whiskeyButton = [UIButton buttonWithType:UIButtonTypeSystem];
+    [self.view addSubview:_whiskeyButton];
     
 }
 
@@ -49,8 +48,8 @@
     self.view.backgroundColor = [UIColor lightGrayColor];
     
     // Tells `wine Button` that when a finger is lifted from the button while still inside its bounds, to call `[self -buttonPressed:]`
-    [self.wineButton addTarget:self action:@selector(buttonPressed:) forControlEvents:UIControlEventTouchUpInside];
-    [self.whiskeyButton addTarget:self action:@selector(buttonPressed:) forControlEvents:UIControlEventTouchUpInside];
+    [self.wineButton addTarget:self action:@selector(winePressed:) forControlEvents:UIControlEventTouchUpInside];
+    [self.whiskeyButton addTarget:self action:@selector(whiskeyPressed:) forControlEvents:UIControlEventTouchUpInside];
     
     // Set the title of the button
     [self.wineButton setTitle:NSLocalizedString(@"Wine", @"wine") forState:UIControlStateNormal];
@@ -66,7 +65,7 @@
     CGFloat itemHeight = 44;
      */
     
-    self.wineButton.frame = CGRectMake(120, 250, 70, 30);
+    self.wineButton.frame = CGRectMake(60, 250, 70, 30);
     self.whiskeyButton.frame = CGRectMake(150, 250, 70, 30);
 }
 

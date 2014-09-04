@@ -121,12 +121,16 @@
         viewWidth = [[UIScreen mainScreen] bounds].size.height;
         isPortrait = NO;
     }
+    
+    CGRect navBarFrame = self.navigationController.navigationBar.frame;
+    NSLog(@"Nav bar Frame: %@", NSStringFromCGRect(navBarFrame));
+    CGFloat bottomOfBar = CGRectGetMaxY(navBarFrame);
 
     CGFloat padding = 20;
     CGFloat itemWidth = viewWidth - padding - padding;
     CGFloat itemHeight = 44;
     
-    self.beerPercentTextField.frame = CGRectMake(padding, padding, itemWidth, itemHeight);
+    self.beerPercentTextField.frame = CGRectMake(padding, padding + bottomOfBar, itemWidth, itemHeight);
     
     CGFloat bottomOfTextField = CGRectGetMaxY(self.beerPercentTextField.frame);
     self.beerCountSlider.frame = CGRectMake(padding, bottomOfTextField + padding, itemWidth, itemHeight);
