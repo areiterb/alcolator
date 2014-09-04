@@ -10,7 +10,10 @@
 #import "BLCViewController.h"
 #import "BLCViewController.h"
 #import "BLCWhiskeyViewController.h"
-#import "BLCMainMenuViewController.h"
+
+@interface BLCAppDelegate () <UITabBarControllerDelegate>
+
+@end
 
 @implementation BLCAppDelegate
 
@@ -19,15 +22,13 @@
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]] ;
     // Override point for customization after application launch.
 
-//    BLCViewController *wineVC = [[BLCViewController alloc] init];
-//    BLCWhiskeyViewController *whiskeyVC = [[BLCWhiskeyViewController alloc] init];
-//    UITabBarController *tabBarVC = [[UITabBarController alloc] init];
-//    tabBarVC.viewControllers = @[wineVC, whiskeyVC];
+    BLCViewController *wineVC = [[BLCViewController alloc] init];
+    BLCWhiskeyViewController *whiskeyVC = [[BLCWhiskeyViewController alloc] init];
+    UITabBarController *tabBarVC = [[UITabBarController alloc] init];
+    tabBarVC.viewControllers = @[wineVC, whiskeyVC];
+    tabBarVC.delegate = self;
     
-    BLCMainMenuViewController *mainMenuViewController = [[BLCMainMenuViewController alloc] init];
-    UINavigationController *navigationController = [[UINavigationController alloc] initWithRootViewController:mainMenuViewController];
-    self.window.rootViewController = navigationController;
-    //self.window.rootViewController = [[BLCMainMenuViewController alloc] init];
+    self.window.rootViewController = tabBarVC;
     [self.window makeKeyAndVisible];
     return YES;
 }
@@ -57,6 +58,10 @@
 - (void)applicationWillTerminate:(UIApplication *)application
 {
     // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
+}
+
+- (void)tabBarController:(UITabBarController *)tabBarController didSelectViewController:(UIViewController *)viewController {
+    NSLog(@"%@", viewController.title);
 }
 
 @end

@@ -8,11 +8,20 @@
 
 #import <UIKit/UIKit.h>
 
+@class BLCViewController;
+
+@protocol BLCDelegate <NSObject>
+
+@optional
+- (void)userGotDrunk:(BLCViewController *)controller withAlcoholPercent:(CGFloat)alcPercent;
+@end
+
 @interface BLCViewController : UIViewController
 
 @property (weak, nonatomic) UITextField *beerPercentTextField;
 @property (weak, nonatomic) UILabel *resultLabel;
 @property (weak, nonatomic) UISlider *beerCountSlider;
+@property (weak, nonatomic) id<BLCDelegate> delegate;
 
 - (void)buttonPressed:(UIButton *)sender;
 

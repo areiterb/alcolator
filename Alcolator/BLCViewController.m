@@ -123,7 +123,6 @@
     }
     
     CGRect navBarFrame = self.navigationController.navigationBar.frame;
-    NSLog(@"Nav bar Frame: %@", NSStringFromCGRect(navBarFrame));
     CGFloat bottomOfBar = CGRectGetMaxY(navBarFrame);
 
     CGFloat padding = 20;
@@ -230,7 +229,14 @@
     
     float ouncesOfAlcoholPerWineGlass = ouncesInOneWineGlass * alcoholPercentageOfWine;
     float numberOfWineGlassesForEquivalentAlcoholAmount = ouncesOfAlcoholTotal / ouncesOfAlcoholPerWineGlass;
-    
+   /*
+    Delagte example Stan wrote
+    if (numberOfWineGlassesForEquivalentAlcoholAmount > 3) {
+        if (self.delegate && [self.delegate respondsToSelector:@selector(userGotDrunk:withAlcoholPercent:)]) {
+            [_delegate userGotDrunk:self withAlcoholPercent:5];
+        }
+    }
+    */
     // decide wheter to use "beer"/"beers" and "glass"/"glasses"
     
     NSString *beerText;
