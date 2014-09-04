@@ -19,6 +19,7 @@
 
 @implementation BLCViewController
 
+
 - (void)loadView {
     // Allocate and initialize the all-encompassing view
     self.view = [[UIView alloc] init];
@@ -54,6 +55,18 @@
     
     //Font Assigment
     //self.resultLabel.font = [UIFont ];
+}
+// Added Tabbed Navigation code
+- (instancetype) init {
+    self = [super init];
+    
+    if (self) {
+        self.title = NSLocalizedString(@"Wine", @"wine");
+        
+        // Since we don't have icons, let's move the title to the middle of the tab bar
+        [self.tabBarItem setTitlePositionAdjustment:UIOffsetMake(0, -18)];
+    }
+    return self;
 }
 
 - (void)viewDidLoad
@@ -91,10 +104,14 @@
     // Gets rid of the maximum number of lines on the label
     self.resultLabel.numberOfLines = 0;
     
+    // Basic Navigation Code
+    self.view.backgroundColor = [UIColor colorWithRed:0.741 green:0.925 blue:0.714 alpha:1]; /*#bdecb6*/
+    
     if (IS_IPAD) {
         _resultLabel.font = PRIMARY_FONT;
     }
 }
+
 
 - (void) viewWillLayoutSubviews {
     [super viewWillLayoutSubviews];
@@ -123,6 +140,7 @@
     self.calculateButton.frame = CGRectMake(padding, bottomOfLabel + padding, itemWidth, itemHeight);
 }
 
+
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];
@@ -143,6 +161,7 @@
 - (void)sliderValueDidChange:(UISlider *)sender {
     NSLog(@"Slider value changed to %f", sender.value);
     [self.beerPercentTextField resignFirstResponder]; //ask about this line
+    [self.tabBarItem setBadgeValue:[NSString stringWithFormat:@"%d", (int) sender.value]]; //Added for Tabbed Navegation code.
     
     int numberOfBeersSlider = self.beerCountSlider.value;
     

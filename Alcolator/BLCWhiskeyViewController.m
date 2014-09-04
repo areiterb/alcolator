@@ -16,6 +16,20 @@
 
 // DELETE PRE-WRITTEN METHODS: initiWithNibName:bundle:, viewDidLoad, didReceiveMemoryWarning…
 
+// Added for tabbed navigation code
+- (instancetype) init {
+    self = [super init];
+    if (self) {
+        self.title = NSLocalizedString(@"Whiskey", nil);
+    }
+    return self;
+}
+
+- (void) viewDidLoad {
+    [super viewDidLoad];
+    self.view.backgroundColor = [UIColor colorWithRed:0.992 green:0.992 blue:0.588 alpha:1]; /*#fdfd96*/
+}
+
 - (void)buttonPressed:(UIButton *)sender;
 {
     [self.beerPercentTextField resignFirstResponder];

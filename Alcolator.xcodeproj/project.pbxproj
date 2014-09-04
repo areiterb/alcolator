@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		265DEFBA19B3DA8800FDAB82 /* BLCWhiskeyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 265DEFB919B3DA8800FDAB82 /* BLCWhiskeyViewController.m */; };
+		267008EB19B77EE60030275C /* BLCMainMenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 267008EA19B77EE60030275C /* BLCMainMenuViewController.m */; };
 		267E6CB719AD2EFD0098FD3D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 267E6CB619AD2EFD0098FD3D /* Foundation.framework */; };
 		267E6CB919AD2EFD0098FD3D /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 267E6CB819AD2EFD0098FD3D /* CoreGraphics.framework */; };
 		267E6CBB19AD2EFD0098FD3D /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 267E6CBA19AD2EFD0098FD3D /* UIKit.framework */; };
@@ -37,6 +38,8 @@
 		265DEFB819B3DA8800FDAB82 /* BLCWhiskeyViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BLCWhiskeyViewController.h; sourceTree = "<group>"; };
 		265DEFB919B3DA8800FDAB82 /* BLCWhiskeyViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BLCWhiskeyViewController.m; sourceTree = "<group>"; };
 		267008E019B5399E0030275C /* Constants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Constants.h; sourceTree = "<group>"; };
+		267008E919B77EE60030275C /* BLCMainMenuViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BLCMainMenuViewController.h; path = ../BLCMainMenuViewController.h; sourceTree = "<group>"; };
+		267008EA19B77EE60030275C /* BLCMainMenuViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BLCMainMenuViewController.m; path = ../BLCMainMenuViewController.m; sourceTree = "<group>"; };
 		267E6CB319AD2EFD0098FD3D /* Alcolator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Alcolator.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		267E6CB619AD2EFD0098FD3D /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		267E6CB819AD2EFD0098FD3D /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -114,6 +117,8 @@
 		267E6CBC19AD2EFD0098FD3D /* Alcolator */ = {
 			isa = PBXGroup;
 			children = (
+				267008E919B77EE60030275C /* BLCMainMenuViewController.h */,
+				267008EA19B77EE60030275C /* BLCMainMenuViewController.m */,
 				265DEFB819B3DA8800FDAB82 /* BLCWhiskeyViewController.h */,
 				265DEFB919B3DA8800FDAB82 /* BLCWhiskeyViewController.m */,
 				267E6CC519AD2EFD0098FD3D /* BLCAppDelegate.h */,
@@ -254,6 +259,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				267E6CC719AD2EFD0098FD3D /* BLCAppDelegate.m in Sources */,
+				267008EB19B77EE60030275C /* BLCMainMenuViewController.m in Sources */,
 				265DEFBA19B3DA8800FDAB82 /* BLCWhiskeyViewController.m in Sources */,
 				267E6CC319AD2EFD0098FD3D /* main.m in Sources */,
 				267E6CCD19AD2EFD0098FD3D /* BLCViewController.m in Sources */,
